@@ -1,56 +1,94 @@
 /* Criado por Luan */
 * {
-    scrollbar-width: 5px;
-    scrollbar-height: 5px;
-    scrollbar-color: #FFF transparent;
+  scrollbar-width: 5px;
+  scrollbar-color: #FFF transparent;
 }
 
 *::-webkit-scrollbar {
-    width: 5px;
-    height: 5px
+  width: 5px;
+  height: 5px
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 body {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 * {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  font: inherit;
+}
+
+.destNegrito {
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.destNome {
+  font-size: 40px;
 }
 
 .d1 {
-    display: grid;
-    grid-template-areas: 'le ld';
-    grid-template-columns: 20% 80%;
+  display: grid;
+  grid-template-areas: 'le ld';
+  grid-template-columns: 20% 80%;
 }
 
 .imgPerfil {
-    width: 75%;
+  width: 75%;
 }
 
 .ladoEsquerdo {
-    grid-area: le;
-    text-align: center;
-    background-color: #e5e5e5;
-    padding: 5px 3px;
-    min-height: 100vh;
+  grid-area: le;
+  text-align: center;
+  background-color: #e5e5e5;
+  padding: 5px 3px;
+  min-height: 100vh;
+  padding-top: 1cm;
 }
 
 .ladoDireito {
-    grid-area: ld;
-    padding: 7px 5%;
-    min-height: 100vh;
+  grid-area: ld;
+  padding: 7px 5%;
+  min-height: 100vh;
+  padding-top: 1cm;
+}
+
+ul,
+ul li span {
+  display: inline-block;
+  width: 100%;
+}
+
+ul li {
+  display: list-item;
+  width: 100%;
+  list-style: none inside none;
+  padding-left: 17px;
+  margin-bottom: 0.2cm;
+}
+
+ul li span::before {
+  content: "• "
+}
+
+ul li span {
+  text-indent: -17px;
 }
