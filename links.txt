@@ -1,0 +1,30 @@
+Office 2016 Visio Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/VisioProRetail.img
+Office 2016 Visio Standard
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/VisioStdRetail.img
+Office 2016 Project Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProjectProRetail.img
+Office 2016 Project Standard
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProjectStdRetail.img
+Office 2016 Professional Plus
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProPlusRetail.img
+Office 2016 Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProfessionalRetail.img
+Office 2016 Home and Business
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/HomeBusinessRetail.img
+Office 2016 Home and Student
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/HomeStudentRetail.img
+Office 2013 Visio Professional
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=VisioProRetail
+Office 2013 Visio Standard
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=VisioStdRetail
+Office 2013 Project Standard
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProjectStdRetail
+Office 2013 Project Pro
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProjectProRetail
+Office 2013 Professional
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProfessionalRetail
+Office 2013 Home and Business
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=HomeBusinessRetail
+Office 2013 Home and Student
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=HomeStudentRetail
