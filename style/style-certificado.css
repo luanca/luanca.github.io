@@ -1,0 +1,48 @@
+/* Criado por Luan Carvalho */
+
+body {
+    padding: 0.5cm;
+}
+
+.listaCert {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0.2cm;
+}
+
+.listaCert li {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'cert info';
+    grid-template-columns: 20% auto;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 0.2cm;
+    column-gap: 1%;
+    padding: 0;
+}
+
+.listaCert li img {
+    grid-area: cert;
+    display: inline-block;
+}
+
+.listaCert li div {
+    grid-area: info;
+}
+
+.listaCert li h2 {
+    display: inline-block;
+}
+
+.listaCert li span {
+    display: inline-block;
+    text-indent: 0px;
+}
+.listaCert li span::before{
+    content: none;
+}
+
+.listaCert li a {
+    display: inline-block;
+}
