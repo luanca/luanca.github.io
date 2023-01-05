@@ -1,0 +1,57 @@
+Office 2016 Visio Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/VisioProRetail.img
+
+Office 2016 Visio Standard
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/VisioStdRetail.img
+
+Office 2016 Project Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProjectProRetail.img
+
+Office 2016 Project Standard
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProjectStdRetail.img
+
+Office 2016 Professional Plus
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProPlusRetail.img
+
+Office 2016 Professional
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/ProfessionalRetail.img
+
+Office 2016 Home and Business
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/HomeBusinessRetail.img
+
+Office 2016 Home and Student
+  https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/HomeStudentRetail.img
+
+Office 2013 Visio Professional
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=VisioProRetail
+  https://c2rsetup.officeapps.live.com/c2r/download.aspx?act=1&language=en-US&TaxRegion=PR&Source=O15HUP&platform=x86&version=O15GA&ProductreleaseID=VisioProRetail
+
+Office 2013 Visio Standard
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=VisioStdRetail
+  https://c2rsetup.officeapps.live.com/c2r/download.aspx?act=1&language=en-US&TaxRegion=PR&Source=O15HUP&platform=x86&version=O15GA&ProductreleaseID=VisioStdRetail
+
+Office 2013 Project Standard
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProjectStdRetail
+  https://c2rsetup.officeapps.live.com/c2r/download.aspx?act=1&language=en-US&TaxRegion=PR&Source=O15HUP&platform=x86&version=O15GA&ProductreleaseID=ProjectStdRetail
+
+Office 2013 Project Pro
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProjectProRetail
+  https://c2rsetup.officeapps.live.com/c2r/download.aspx?act=1&language=en-US&TaxRegion=PR&Source=O15HUP&platform=x86&version=O15GA&ProductreleaseID=ProjectProRetail
+
+Office 2013 Professional
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=ProfessionalRetail
+  http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/ProfessionalRetail.img
+
+Office 2013 Professional Plus
+  https://c2rsetup.officeapps.live.com/c2r/download.aspx?act=1&token=&platform=x86&Source=O15HUP&version=O15GA&ProductreleaseID=ProPlusRetail&language=en-US&TaxRegion=PR
+
+Office 2013 Home and Business
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=HomeBusinessRetail
+  http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeBusinessRetail.img
+
+Office 2013 Home and Student
+  https://officeredir.microsoft.com/r/rlidO15C2RMediaDownload?p1=db&p2=pt-BR&p3=HomeStudentRetail
+  http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/HomeStudentRetail.img
+
+Outlook 2013
+  http://officecdn.microsoft.com/pr/39168D7E-077B-48E7-872C-B232C3E72675/media/en-US/OutlookRetail.img
