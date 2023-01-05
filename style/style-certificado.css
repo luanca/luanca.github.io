@@ -20,11 +20,14 @@ body {
     margin-bottom: 0.2cm;
     column-gap: 1%;
     padding: 0;
+    justify-items: center;
 }
 
 .listaCert li img {
     grid-area: cert;
     display: inline-block;
+    max-height: 5cm;
+    max-width: fit-content;
 }
 
 .listaCert li div {
