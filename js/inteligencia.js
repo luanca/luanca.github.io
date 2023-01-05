@@ -1,8 +1,8 @@
 // Criado por Luan Carvalho
 
-function idade() {
+function idade(nascimento) {
   // Sintaxe da variável idade: "ano-mes-dia"
-  var nascimento = "1999-05-10";
+  //var nascimento = "1999-05-10";
   var idade = 0;
   var vi1 = new Date();
   var vi2 = vi1.getFullYear()
@@ -27,6 +27,25 @@ function idade() {
   } else {
     vi9 = "ano";
   }
-  document.getElementById("idadeExtenso").innerHTML = idade + " " + vi9;
+  return idade + " " + vi9;
 }
-idade();
+
+function preencher() {
+  // função para preencher as informações na página
+  var vp1, vp2;
+  vp1 = new XMLHttpRequest();
+  vp1.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      vp2 = JSON.parse(this.responseText);
+      document.getElementById("nomeCurto").innerText = vp2.NomeCurto;
+      document.title = document.title + ": " + vp2.NomeCurto;
+      document.getElementById("nome").innerText = vp2.Nome;
+      document.getElementById("fotoPerfil").src = vp2.FotoPerfil;
+      document.getElementById("idade").innerHTML = "Idade: " + idade(vp2.DataNascimento.ano + "-" + vp2.DataNascimento.mes + "-" + vp2.DataNascimento.dia);
+    }
+  };
+  vp1.open("GET", "perfil.json", true);
+  vp1.send();
+}
+
+preencher();

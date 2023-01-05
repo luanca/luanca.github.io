@@ -1,0 +1,10 @@
+{
+    "Nome": "Luan de Carvalho Santos",
+    "NomeCurto": "Luan Carvalho",
+    "DataNascimento": {
+        "dia": 10,
+        "mes": 5,
+        "ano": 1999
+    },
+    "FotoPerfil": "img/imgPerfil.jpg"
+}
