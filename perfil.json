@@ -1,10 +1,23 @@
 {
-    "Nome": "Luan de Carvalho Santos",
-    "NomeCurto": "Luan Carvalho",
-    "DataNascimento": {
-        "dia": 10,
-        "mes": 5,
-        "ano": 1999
+  "Nome": "Luan de Carvalho Santos",
+  "NomeCurto": "Luan Carvalho",
+  "DataNascimento": {
+    "dia": 10,
+    "mes": 5,
+    "ano": 1999
+  },
+  "FotoPerfil": "img/imgPerfil.jpg",
+  "ResideEm": "Santa Catarina, Brasil",
+  "Links": [
+    {
+      "Nome": "LinkedIn",
+      "Url": "https://www.linkedin.com/in/luancarvalhos",
+      "Icone": "img/logo/linkedin.png"
     },
-    "FotoPerfil": "img/imgPerfil.jpg"
+    {
+      "Nome": "500px",
+      "Url": "https://500px.com/p/luanc",
+      "Icone": "img/logo/500px.jpg"
+    }
+  ]
 }

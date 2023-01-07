@@ -98,3 +98,34 @@ a:visited {
   display: inline-block;
   width: 100%;
 }
+
+.d1 .listaLinks {
+  display: inline-block;
+  width: 100%;
+}
+
+.d1 .listaLinks a,
+.d1 .listaLinks a:link {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: auto;
+  max-width: 33%;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 3px 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.d1 .listaLinks a:hover{
+  box-shadow: 0px 0px 20px 5px rgb(255 255 255 / 10%);
+  text-decoration: underline;
+}
+
+.d1 .listaLinks img{
+  width: 1cm;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  overflow: hidden;
+}
