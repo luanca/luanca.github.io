@@ -41,7 +41,7 @@ function preencher() {
       document.title = document.title + ": " + vp2.NomeCurto;
       document.getElementById("nome").innerText = vp2.Nome;
       document.getElementById("fotoPerfil").src = vp2.FotoPerfil;
-      document.getElementById("idade").innerHTML = "Idade: " + idade(vp2.DataNascimento.ano + "-" + vp2.DataNascimento.mes + "-" + vp2.DataNascimento.dia);
+      document.getElementById("idade").innerHTML = idade(vp2.DataNascimento.ano + "-" + vp2.DataNascimento.mes + "-" + vp2.DataNascimento.dia) + " de idade";
       document.getElementById("resideEm").innerText = vp2.ResideEm;
       vp2.Links.forEach(vp7 => {
         vp8 = document.createElement("h3");

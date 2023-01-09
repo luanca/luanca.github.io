@@ -10,7 +10,7 @@
   "ResideEm": "Santa Catarina, Brasil",
   "Links": [
     {
-      "Categoria": "Mídias sociais",
+      "Categoria": "Mídias sociais e comunidades",
       "Links": [
         {
           "Nome": "LinkedIn",
@@ -26,6 +26,16 @@
           "Icone": "http://twitter.com/favicon.ico",
           "Nome": "Twitter",
           "Url": "https://twitter.com/luanc1005"
+        },
+        {
+          "Url": "https://t.me/luancrvlh",
+          "Icone": "http://t.me/favicon.ico",
+          "Nome": "Telegram"
+        },
+        {
+          "Nome": "DEV",
+          "Url": "https://dev.to/luanca",
+          "Icone": "https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"
         }
       ]
     },
