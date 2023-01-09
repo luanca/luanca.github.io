@@ -68,6 +68,16 @@
           "Url": "https://stock.adobe.com/br/contributor/208788734/Luan%20Carvalho"
         }
       ]
+    },
+    {
+      "Categoria": "Meus projetos",
+      "Links":[
+        {
+          "Nome": "Mega Karaokê 🧑‍🎤",
+          "Url": "https://www.youtube.com/@mkaraoke",
+          "Icone": "http://youtube.com/favicon.ico"
+        }
+      ]
     }
   ]
 }
