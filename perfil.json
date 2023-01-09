@@ -15,15 +15,15 @@
         {
           "Nome": "LinkedIn",
           "Url": "https://www.linkedin.com/in/luancarvalhos",
-          "Icone": "https://static.licdn.com/sc/h/eahiplrwoq61f4uan012ia17i"
+          "Icone": "http://linkedin.com/favicon.ico"
         },
         {
-          "Icone": "https://www.facebook.com/favicon.ico",
+          "Icone": "http://facebook.com/favicon.ico",
           "Nome": "Facebook",
           "Url": "https://www.facebook.com/luan.carvalho.jw"
         },
         {
-          "Icone": "https://abs.twimg.com/favicons/twitter.ico",
+          "Icone": "http://twitter.com/favicon.ico",
           "Nome": "Twitter",
           "Url": "https://twitter.com/luanc1005"
         }
@@ -34,7 +34,7 @@
       "Links":[
         {
           "Nome": "GitHub",
-          "Icone": "https://github.githubassets.com/favicons/favicon-dark.png",
+          "Icone": "http://github.com/favicon.ico",
           "Url": "https://github.com/luanca"
         }
       ]
@@ -45,25 +45,25 @@
         {
           "Nome": "500px",
           "Url": "https://500px.com/p/luanc",
-          "Icone": "https://500px.com/favicon.ico"
+          "Icone": "http://500px.com/favicon.ico"
         },
         {
           "Nome": "Shutterstock",
           "Url": "https://www.shutterstock.com/g/luanc",
-          "Icone": "https://www.shutterstock.com/assets/images/shutterstock-favicon-180.png"
+          "Icone": "http://shutterstock.com/favicon.ico"
         },
         {
           "Nome": "Pond5",
           "Url": "https://www.pond5.com/pt/artist/luancjw",
-          "Icone": "https://www.pond5.com/favicon-96x96.png"
+          "Icone": "http://pond5.com/favicon.ico"
         },
         {
-          "Icone": "https://www.bigstockphoto.com/favicon.ico",
+          "Icone": "http://bigstockphoto.com/favicon.ico",
           "Nome" : "Bigstock",
           "Url" : "https://www.bigstockphoto.com/pt/profile/Luan%20Carvalho/"
         },
         {
-          "Icone": "https://stock.adobe.com/favicon.ico",
+          "Icone": "http://stock.adobe.com/favicon.ico",
           "Nome": "Adobe Stock",
           "Url": "https://stock.adobe.com/br/contributor/208788734/Luan%20Carvalho"
         }
