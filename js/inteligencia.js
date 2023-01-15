@@ -47,6 +47,7 @@ function preencher() {
         vp8 = document.createElement("h3");
         vp8.innerText = vp7.Categoria;
         vp8.setAttribute("class", "catLinks");
+        vp8.setAttribute("id", encodeURIComponent(vp7.Categoria));
         document.getElementById("links").appendChild(vp8);
         vp7.Links.forEach(vp3 => {
           vp4 = document.createElement("img");

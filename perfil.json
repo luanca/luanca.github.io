@@ -80,10 +80,10 @@
       ]
     },
     {
-      "Categoria": "Meus projetos",
+      "Categoria": "Meu projeto: Mega Karaokê",
       "Links":[
         {
-          "Nome": "Mega Karaokê 🧑‍🎤",
+          "Nome": "Youtube",
           "Url": "https://www.youtube.com/@mkaraoke",
           "Icone": "http://youtube.com/favicon.ico"
         }
