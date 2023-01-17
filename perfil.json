@@ -86,6 +86,11 @@
           "Nome": "Youtube",
           "Url": "https://www.youtube.com/@mkaraoke",
           "Icone": "http://youtube.com/favicon.ico"
+        },
+        {
+          "Nome": "Facebook",
+          "Icone": "https://www.facebook.com/favicon.ico",
+          "Url": "https://www.facebook.com/MegaKaraoke"
         }
       ]
     }
