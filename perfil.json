@@ -23,11 +23,6 @@
           "Url": "https://www.facebook.com/luan.carvalho.jw"
         },
         {
-          "Icone": "http://twitter.com/favicon.ico",
-          "Nome": "Twitter",
-          "Url": "https://twitter.com/luanc1005"
-        },
-        {
           "Url": "https://t.me/luancrvlh",
           "Icone": "http://t.me/favicon.ico",
           "Nome": "Telegram"
@@ -91,6 +86,11 @@
           "Nome": "Facebook",
           "Icone": "https://www.facebook.com/favicon.ico",
           "Url": "https://www.facebook.com/MegaKaraoke"
+        },
+        {
+          "Nome": "Instagram",
+          "Icone": "https://www.instagram.com/favicon.ico",
+          "Url": "https://www.instagram.com/mega.karaoke/"
         }
       ]
     }
