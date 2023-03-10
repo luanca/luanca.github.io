@@ -41,6 +41,11 @@
           "Nome": "GitHub",
           "Icone": "http://github.com/favicon.ico",
           "Url": "https://github.com/luanca"
+        },
+        {
+          "Nome": "PyPI",
+          "Icone": "https://pypi.org/favicon.ico",
+          "Url": "https://pypi.org/user/luanc/"
         }
       ]
     },
