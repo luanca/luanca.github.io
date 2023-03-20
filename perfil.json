@@ -84,18 +84,18 @@
       "Links":[
         {
           "Nome": "Youtube",
-          "Url": "https://www.youtube.com/@mkaraoke",
+          "Url": "https://www.youtube.com/@MegaKaraokeOficial",
           "Icone": "http://youtube.com/favicon.ico"
         },
         {
           "Nome": "Facebook",
           "Icone": "https://www.facebook.com/favicon.ico",
-          "Url": "https://www.facebook.com/MegaKaraoke"
+          "Url": "https://www.facebook.com/MegaKaraokeOficial"
         },
         {
           "Nome": "Instagram",
           "Icone": "https://www.instagram.com/favicon.ico",
-          "Url": "https://www.instagram.com/mega.karaoke/"
+          "Url": "https://www.instagram.com/MegaKaraokeOficial/"
         }
       ]
     }
