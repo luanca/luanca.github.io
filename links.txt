@@ -1,3 +1,26 @@
+// https://gist.github.com/DartPower/e9809d3468eec83af9c42057cb3375bc
+
+Office 365 Home Premium
+  https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/O365HomePremRetail.img
+
+Office 365 Business
+  https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/O365BusinessRetail.img
+
+Office 365 Professional Plus
+  https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/O365ProPlusRetail.img
+
+Office 2021 Professional
+  https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/Professional2021Retail.img
+
+Office 2021 Professional Plus
+  https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/ProPlus2021Retail.img
+
+Office 2019 Professional
+  https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/Professional2019Retail.img
+
+Office 2019 Professional Plus
+  https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/pt-BR/ProPlus2019Retail.img
+
 Office 2016 Visio Professional
   https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/pt-BR/VisioProRetail.img
 
