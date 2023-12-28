@@ -76,6 +76,11 @@
           "Icone": "http://stock.adobe.com/favicon.ico",
           "Nome": "Adobe Stock",
           "Url": "https://stock.adobe.com/br/contributor/208788734/Luan%20Carvalho"
+        },
+        {
+          "Icone": "http://flickr.com/favicon.ico",
+          "Nome": "Flickr",
+          "Url": "http://flickr.com/199851882@N08"
         }
       ]
     },
