@@ -142,3 +142,27 @@ a:visited {
   display: inline-block;
   font-size: 1.1rem;
 }
+
+@media only screen and (max-width: 1000px) {
+  .d1 .listaLinks a, .d1 .listaLinks a:link {
+    width: 24.3%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .d1 .listaLinks a, .d1 .listaLinks a:link {
+    width: 32.63333%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .d1 .listaLinks a, .d1 .listaLinks a:link {
+    width: 49.3%;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .d1 .listaLinks a, .d1 .listaLinks a:link {
+    width: 99.3%;
+  }
+}
