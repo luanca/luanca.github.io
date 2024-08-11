@@ -6,7 +6,7 @@
     "mes": 5,
     "ano": 1999
   },
-  "FotoPerfil": "img/imgPerfil.jpg",
+  "FotoPerfil": "img/imgPerfil2.jpg",
   "ResideEm": "Santa Catarina, Brasil",
   "Links": [
     {
@@ -15,92 +15,97 @@
         {
           "Nome": "LinkedIn",
           "Url": "https://www.linkedin.com/in/luancarvalhos",
-          "Icone": "http://linkedin.com/favicon.ico"
+          "Icone": "Icones/Slide3.JPG"
         },
         {
-          "Icone": "http://facebook.com/favicon.ico",
+          "Icone": "Icones/Slide2.JPG",
           "Nome": "Facebook",
           "Url": "https://www.facebook.com/luan.carvalho.jw"
         },
         {
           "Url": "https://t.me/luancrvlh",
-          "Icone": "http://t.me/favicon.ico",
+          "Icone": "Icones/Slide4.JPG",
           "Nome": "Telegram"
         },
         {
-          "Nome": "DEV",
+          "Nome": "DEV Community",
           "Url": "https://dev.to/luanca",
-          "Icone": "https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"
+          "Icone": "Icones/Slide5.JPG"
         }
       ]
     },
     {
-      "Categoria":"Repositórios",
+      "Categoria":"Repositórios de Projetos Públicos",
       "Links":[
         {
           "Nome": "GitHub",
-          "Icone": "http://github.com/favicon.ico",
+          "Icone": "Icones/Slide6.JPG",
           "Url": "https://github.com/luanca"
         },
         {
           "Nome": "PyPI",
-          "Icone": "https://pypi.org/static/images/favicon.35549fe8.ico",
+          "Icone": "Icones/Slide7.JPG",
           "Url": "https://pypi.org/user/luanc/"
         }
       ]
     },
     {
-      "Categoria": "Portifólios",
+      "Categoria": "Portifólios de Fotos e Criativos",
       "Links": [
         {
           "Nome": "500px",
           "Url": "https://500px.com/p/luanc",
-          "Icone": "http://500px.com/favicon.ico"
+          "Icone": "Icones/Slide8.JPG"
         },
         {
           "Nome": "Shutterstock",
           "Url": "https://www.shutterstock.com/g/luanc",
-          "Icone": "http://shutterstock.com/favicon.ico"
+          "Icone": "Icones/Slide9.JPG"
         },
         {
           "Nome": "Pond5",
           "Url": "https://www.pond5.com/pt/artist/luancjw",
-          "Icone": "http://pond5.com/favicon.ico"
+          "Icone": "Icones/Slide10.JPG"
         },
         {
-          "Icone": "http://bigstockphoto.com/favicon.ico",
+          "Icone": "Icones/Slide11.JPG",
           "Nome" : "Bigstock",
           "Url" : "https://www.bigstockphoto.com/pt/profile/Luan%20Carvalho/"
         },
         {
-          "Icone": "http://stock.adobe.com/favicon.ico",
+          "Icone": "Icones/Slide12.JPG",
           "Nome": "Adobe Stock",
           "Url": "https://stock.adobe.com/br/contributor/208788734/Luan%20Carvalho"
         },
         {
-          "Icone": "http://flickr.com/favicon.ico",
+          "Icone": "Icones/Slide13.JPG",
           "Nome": "Flickr",
           "Url": "http://flickr.com/199851882@N08"
         }
       ]
     },
     {
-      "Categoria": "Meu projeto: Mega Karaokê",
+      "Categoria": "PROJETO › Mega Karaokê",
       "Links":[
         {
-          "Nome": "Youtube",
+          "Nome": "Youtube ∷ Mega Karaokê",
           "Url": "https://www.youtube.com/@MegaKaraokeOficial",
-          "Icone": "http://youtube.com/favicon.ico"
+          "Icone": "Icones/Slide14.JPG"
         },
         {
-          "Nome": "Facebook",
-          "Icone": "https://www.facebook.com/favicon.ico",
+          "Nome": "Facebook ∷ Mega Karaokê",
+          "Icone": "Icones/Slide15.JPG",
           "Url": "https://www.facebook.com/MegaKaraokeOficial"
         },
         {
-          "Nome": "Instagram",
-          "Icone": "https://www.instagram.com/favicon.ico",
+          "Nome": "Instagram ∷ Mega Karaokê",
+          "Icone": "Icones/Slide16.JPG",
           "Url": "https://www.instagram.com/MegaKaraokeOficial/"
+        },
+        {
+          "Nome": "LinkedIn ∷ Mega Karaokê",
+          "Icone": "Icones/Slide17.JPG",
+          "Url": "https://www.linkedin.com/company/megakaraokeoficial"
         }
       ]
     }

@@ -39,7 +39,7 @@ function preencher() {
       vp2 = JSON.parse(this.responseText);
       document.getElementById("nomeCurto").innerText = vp2.NomeCurto;
       document.title = document.title + ": " + vp2.NomeCurto;
-      document.getElementById("nome").innerText = vp2.Nome;
+      //document.getElementById("nome").innerText = vp2.Nome;
       document.getElementById("fotoPerfil").src = vp2.FotoPerfil;
       document.getElementById("idade").innerHTML = idade(vp2.DataNascimento.ano + "-" + vp2.DataNascimento.mes + "-" + vp2.DataNascimento.dia) + " de idade";
       document.getElementById("resideEm").innerText = vp2.ResideEm;

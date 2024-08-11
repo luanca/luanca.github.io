@@ -19,8 +19,7 @@
 }
 
 body {
-  background-color: #050010;
-  background-image: radial-gradient(circle at 120% 170%, #060634 45%, #11251e 100%);
+  background-color: #222831;
   text-align: center;
   color: #fff;
 }
@@ -30,7 +29,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Noto Sans", "Noto Sans Symbols 2", "Noto Color Emoji", sans-serif;
 }
 
 a,
@@ -43,13 +42,11 @@ a:visited {
 .d1 {
   display: inline-block;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.2);
   text-align: left;
   min-height: 100vh;
-  padding: 20px 7px;
-  backdrop-filter: blur(30px);
+  padding: 0;
 }
 
 .d1 .final {
@@ -67,41 +64,47 @@ a:visited {
   display: inline;
 }
 
+.d1 .topo, .d1 .topo * {
+  text-wrap: nowrap;
+  vertical-align: middle;
+}
+
 .d1 .topo {
   display: inline-block;
   width: 100%;
-  text-align: center;
+  background-color: #31363F;
+  border-radius: 1rem;
+}
+
+.d1 .topo .tpClEsq {
+  width: 15%;
+  display: inline-block;
+}
+
+.d1 .topo .tpClDir {
+  width: 85%;
+  display: inline-block;
+  padding: 0 1rem;
 }
 
 .d1 .topo h1 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .d1 .topo span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .d1 .topo .fotoPerfil {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 9rem;
-}
-
-.d1 .infBasicas {
-  display: inline-block;
   width: 100%;
-  margin: 50px 0 7px 0;
-}
-
-.d1 .infBasicas span {
-  display: inline-block;
-  width: 100%;
+  border-radius: 1rem;
 }
 
 .d1 .listaLinks {
   display: inline-block;
   width: 100%;
+  padding: 0 1%;
 }
 
 .d1 .listaLinks .catLinks {
@@ -112,25 +115,30 @@ a:visited {
 .d1 .listaLinks a,
 .d1 .listaLinks a:link {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   color: #000;
-  width: auto;
-  padding: 5px;
+  width: 19.3%;
+  padding: 1px;
   border-radius: 4px;
   text-decoration: none;
-  margin: 3px 5px;
-  display: inline-flex;
-  align-items: center;
+  margin: 0 0.7% 5px 0;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 .d1 .listaLinks a:hover{
   box-shadow: 0px 0px 20px 5px rgb(255 255 255 / 10%);
-  text-decoration: underline;
 }
 
 .d1 .listaLinks img{
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-  display: block;
+  width: 100%;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.d1 .listaLinks span{
+  padding: 0 5px;
+  font-weight: 800;
+  display: inline-block;
+  font-size: 1.1rem;
 }
