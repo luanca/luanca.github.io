@@ -6,7 +6,7 @@
     "mes": 5,
     "ano": 1999
   },
-  "FotoPerfil": "img/imgPerfil2.jpg",
+  "FotoPerfil": "img/imgPerfil3.jpg",
   "ResideEm": "Santa Catarina, Brasil",
   "Links": [
     {
@@ -88,24 +88,39 @@
       "Categoria": "PROJETO › Mega Karaokê",
       "Links":[
         {
-          "Nome": "Youtube ∷ Mega Karaokê",
+          "Nome": "Site oficial",
+          "Icone": "",
+          "Url": "https://megakaraokeoficial.web.app/"
+        },
+        {
+          "Nome": "Youtube",
           "Url": "https://www.youtube.com/@MegaKaraokeOficial",
           "Icone": "Icones/Slide14.JPG"
         },
         {
-          "Nome": "Facebook ∷ Mega Karaokê",
+          "Nome": "Facebook",
           "Icone": "Icones/Slide15.JPG",
           "Url": "https://www.facebook.com/MegaKaraokeOficial"
         },
         {
-          "Nome": "Instagram ∷ Mega Karaokê",
+          "Nome": "Instagram",
           "Icone": "Icones/Slide16.JPG",
           "Url": "https://www.instagram.com/MegaKaraokeOficial/"
         },
         {
-          "Nome": "LinkedIn ∷ Mega Karaokê",
+          "Nome": "LinkedIn",
           "Icone": "Icones/Slide17.JPG",
           "Url": "https://www.linkedin.com/company/megakaraokeoficial"
+        }
+      ]
+    },
+    {
+      "Categoria": "MINI PROJETO › Calenberta",
+      "Links":[
+        {
+          "Nome": "Página",
+          "Icone": "",
+          "Url": "/ProjetosPublicos/Calenberta/index.html"
         }
       ]
     }
