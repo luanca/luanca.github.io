@@ -4,55 +4,55 @@ const perguntas = {
     "1": {
         "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
         "status": "Pergunta 1 de 9",
-        "paragrafo": "Há um calendário nesta página. Verifique esse calendário e responda a pergunta com um dos botões abaixo.",
+        "paragrafo": "Há um calendário nesta página. Verifique esse calendário e responda a pergunta usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
     },
     "2": {
-        "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
+        "pergunta": "Este calendário mostra o dia do mês do seu nascimento?",
         "status": "Pergunta 2 de 9",
-        "paragrafo": "O calendário foi modificado! Veja novamente o calendário e responda se sim ou não abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Dia"
     },
     "3": {
-        "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
+        "pergunta": "O dia do mês em que você nasceu visível neste calendário?",
         "status": "Pergunta 3 de 9",
-        "paragrafo": "Calendário modificado novamente! Verifique mais uma vez e responda se sim ou não abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Dia"
     },
     "4": {
-        "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
+        "pergunta": "Consegue ver o dia do mês do seu nascimento neste calendário?",
         "status": "Pergunta 4 de 9",
-        "paragrafo": "Mais uma modificação no calendário! Use-o novamente e responda a pergunta usando um dos botões abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Dia"
     },
     "5": {
-        "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
+        "pergunta": "Neste calendário é possível ver o dia do mês em que você nasceu?",
         "status": "Pergunta 5 de 9",
-        "paragrafo": "Última pergunta sobre o dia! Verifique novamente o calendário e responda a pergunta usando um dos botões abaixo.",
+        "paragrafo": "Última pergunta sobre o dia! Responda-a usando um dos botôes abaixo.",
         "calendarioTipo": "Dia"
     },
     "6": {
         "pergunta": "O mês do seu nascimento está neste calendário?",
         "status": "Pergunta 6 de 9",
-        "paragrafo": "Já sei o dia! Dessa vez, o calendário está exibindo os meses do ano. Verifique-o e responda a pergunta usando um dos botões abaixo.",
+        "paragrafo": "Agora o calendário está exibindo os meses do ano. Verifique esse calendário e responda a pergunta usando um dos botões abaixo.",
         "calendarioTipo": "Mes"
     },
     "7": {
-        "pergunta": "O mês do seu nascimento está neste calendário?",
+        "pergunta": "É possível ver o mês do seu nascimento neste calendário?",
         "status": "Pergunta 7 de 9",
-        "paragrafo": "Calendário modificado! Veja novamente o calendário e resopnda a pergunta por um dos botões abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Mes"
     },
     "8": {
-        "pergunta": "O mês do seu nascimento está neste calendário?",
+        "pergunta": "O mês em que você nasceu está entre os meses visíveis neste calendário?",
         "status": "Pergunta 8 de 9",
-        "paragrafo": "Quase lá! Verifique novamente o calendário que foi modificado e responda a pergunta usando um dos botões abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Mes"
     },
     "9": {
-        "pergunta": "O mês do seu nascimento está neste calendário?",
+        "pergunta": "O mês do seu nascimento aparece neste calendário?",
         "status": "Pergunta 9 de 9",
-        "paragrafo": "Use o calendário pela última vez e responda a pergunta com um dos botões abaixo.",
+        "paragrafo": "Responda usando um dos botôes abaixo.",
         "calendarioTipo": "Mes"
     }
 }
