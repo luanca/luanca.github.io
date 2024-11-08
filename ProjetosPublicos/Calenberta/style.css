@@ -1,0 +1,359 @@
+/* Criado por Luan Carvalho em 07.11.2024 às 20:41 */
+
+:root {
+    font-family: "Noto Serif", "Noto Color Emoji", serif;
+    font-size: 0.45cm;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ElementoTotal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    max-width: 50cm;
+    max-height: 25cm;
+    transform: translate(-50%, -50%);
+}
+
+.ElementoTotal .Esquerdo {
+    width: 40%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.ElementoTotal .Direito {
+    width: 60%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 55%);
+    perspective: 100px;
+}
+
+.SecInicio {
+    margin-top: 1.3rem;
+}
+
+.subsecao {
+    margin-top: 1rem;
+}
+
+.botaoAcao {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+button {
+    background-color: transparent;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #222;
+    font-weight: 800;
+    font-size: 1.4rem;
+    font-family: inherit !important;
+    margin-right: 1ch;
+}
+
+p {
+    margin-top: 1ch;
+}
+
+.tituloBemVindo h2 {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.tituloBemVindo .preLogo {
+    font-size: 1.3rem;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.tituloBemVindo .posLogo {
+    font-size: 1.1rem;
+    line-height: 1em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.textoLegal {
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+}
+
+.iconeInicio,
+.iconeResultado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30ch;
+    line-height: 1em;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(356deg) translateX(-17px) translateY(30px) rotateZ(3deg) rotateX(1.1deg);
+}
+
+.calendario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario .calendarioDia {
+    display: none;
+}
+
+.calendario.Dia .calendarioDia {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 0.3ch;
+    cursor: not-allowed;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-width: 3ch;
+    border-top-color: rgba(0, 0, 10, 0.7);
+    padding: 0.3ch;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.calendarioDia span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6ch;
+    height: 6ch;
+    padding: 1ch;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.calendarioDia.perg1 span:nth-of-type(1),
+.calendarioDia.perg1 span:nth-of-type(3),
+.calendarioDia.perg1 span:nth-of-type(5),
+.calendarioDia.perg1 span:nth-of-type(7),
+.calendarioDia.perg1 span:nth-of-type(9),
+.calendarioDia.perg1 span:nth-of-type(11),
+.calendarioDia.perg1 span:nth-of-type(13),
+.calendarioDia.perg1 span:nth-of-type(15),
+.calendarioDia.perg1 span:nth-of-type(17),
+.calendarioDia.perg1 span:nth-of-type(19),
+.calendarioDia.perg1 span:nth-of-type(21),
+.calendarioDia.perg1 span:nth-of-type(23),
+.calendarioDia.perg1 span:nth-of-type(25),
+.calendarioDia.perg1 span:nth-of-type(27),
+.calendarioDia.perg1 span:nth-of-type(29),
+.calendarioDia.perg1 span:nth-of-type(31),
+.calendarioDia.perg2 span:nth-of-type(2),
+.calendarioDia.perg2 span:nth-of-type(3),
+.calendarioDia.perg2 span:nth-of-type(6),
+.calendarioDia.perg2 span:nth-of-type(7),
+.calendarioDia.perg2 span:nth-of-type(10),
+.calendarioDia.perg2 span:nth-of-type(11),
+.calendarioDia.perg2 span:nth-of-type(14),
+.calendarioDia.perg2 span:nth-of-type(15),
+.calendarioDia.perg2 span:nth-of-type(18),
+.calendarioDia.perg2 span:nth-of-type(19),
+.calendarioDia.perg2 span:nth-of-type(22),
+.calendarioDia.perg2 span:nth-of-type(23),
+.calendarioDia.perg2 span:nth-of-type(26),
+.calendarioDia.perg2 span:nth-of-type(27),
+.calendarioDia.perg2 span:nth-of-type(30),
+.calendarioDia.perg2 span:nth-of-type(31),
+.calendarioDia.perg3 span:nth-of-type(4),
+.calendarioDia.perg3 span:nth-of-type(5),
+.calendarioDia.perg3 span:nth-of-type(6),
+.calendarioDia.perg3 span:nth-of-type(7),
+.calendarioDia.perg3 span:nth-of-type(12),
+.calendarioDia.perg3 span:nth-of-type(13),
+.calendarioDia.perg3 span:nth-of-type(14),
+.calendarioDia.perg3 span:nth-of-type(15),
+.calendarioDia.perg3 span:nth-of-type(20),
+.calendarioDia.perg3 span:nth-of-type(21),
+.calendarioDia.perg3 span:nth-of-type(22),
+.calendarioDia.perg3 span:nth-of-type(23),
+.calendarioDia.perg3 span:nth-of-type(28),
+.calendarioDia.perg3 span:nth-of-type(29),
+.calendarioDia.perg3 span:nth-of-type(30),
+.calendarioDia.perg3 span:nth-of-type(31),
+.calendarioDia.perg4 span:nth-of-type(8),
+.calendarioDia.perg4 span:nth-of-type(9),
+.calendarioDia.perg4 span:nth-of-type(10),
+.calendarioDia.perg4 span:nth-of-type(11),
+.calendarioDia.perg4 span:nth-of-type(12),
+.calendarioDia.perg4 span:nth-of-type(13),
+.calendarioDia.perg4 span:nth-of-type(14),
+.calendarioDia.perg4 span:nth-of-type(15),
+.calendarioDia.perg4 span:nth-of-type(24),
+.calendarioDia.perg4 span:nth-of-type(25),
+.calendarioDia.perg4 span:nth-of-type(26),
+.calendarioDia.perg4 span:nth-of-type(27),
+.calendarioDia.perg4 span:nth-of-type(28),
+.calendarioDia.perg4 span:nth-of-type(29),
+.calendarioDia.perg4 span:nth-of-type(30),
+.calendarioDia.perg4 span:nth-of-type(31),
+.calendarioDia.perg5 span:nth-of-type(16),
+.calendarioDia.perg5 span:nth-of-type(17),
+.calendarioDia.perg5 span:nth-of-type(18),
+.calendarioDia.perg5 span:nth-of-type(19),
+.calendarioDia.perg5 span:nth-of-type(20),
+.calendarioDia.perg5 span:nth-of-type(21),
+.calendarioDia.perg5 span:nth-of-type(22),
+.calendarioDia.perg5 span:nth-of-type(23),
+.calendarioDia.perg5 span:nth-of-type(24),
+.calendarioDia.perg5 span:nth-of-type(25),
+.calendarioDia.perg5 span:nth-of-type(26),
+.calendarioDia.perg5 span:nth-of-type(27),
+.calendarioDia.perg5 span:nth-of-type(28),
+.calendarioDia.perg5 span:nth-of-type(29),
+.calendarioDia.perg5 span:nth-of-type(30),
+.calendarioDia.perg5 span:nth-of-type(31) {
+    visibility: visible;
+}
+
+.calendario .calendarioMes {
+    display: none;
+}
+
+.calendario.Mes .calendarioMes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.3ch;
+    cursor: not-allowed;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-width: 3ch;
+    border-top-color: rgba(0, 0, 10, 0.7);
+    padding: 0.3ch;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.calendarioMes span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6ch;
+    padding: 1ch;
+    height: 6ch;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.calendarioMes.perg6 span:nth-of-type(1),
+.calendarioMes.perg6 span:nth-of-type(3),
+.calendarioMes.perg6 span:nth-of-type(5),
+.calendarioMes.perg6 span:nth-of-type(7),
+.calendarioMes.perg6 span:nth-of-type(9),
+.calendarioMes.perg6 span:nth-of-type(11),
+.calendarioMes.perg7 span:nth-of-type(2),
+.calendarioMes.perg7 span:nth-of-type(3),
+.calendarioMes.perg7 span:nth-of-type(6),
+.calendarioMes.perg7 span:nth-of-type(7),
+.calendarioMes.perg7 span:nth-of-type(10),
+.calendarioMes.perg7 span:nth-of-type(11),
+.calendarioMes.perg8 span:nth-of-type(4),
+.calendarioMes.perg8 span:nth-of-type(5),
+.calendarioMes.perg8 span:nth-of-type(6),
+.calendarioMes.perg8 span:nth-of-type(7),
+.calendarioMes.perg8 span:nth-of-type(12),
+.calendarioMes.perg9 span:nth-of-type(8),
+.calendarioMes.perg9 span:nth-of-type(9),
+.calendarioMes.perg9 span:nth-of-type(10),
+.calendarioMes.perg9 span:nth-of-type(11),
+.calendarioMes.perg9 span:nth-of-type(12) {
+    visibility: visible;
+}
+
+.ElementoTotal.Inicio .Esquerdo .perguntas,
+.ElementoTotal.Inicio .Esquerdo .resultado,
+.ElementoTotal.Inicio .Esquerdo header h1,
+.ElementoTotal.Inicio .Direito .calendario,
+.ElementoTotal.Inicio .Direito .iconeResultado,
+.ElementoTotal.Pergunta .Esquerdo .SecInicio,
+.ElementoTotal.Pergunta .Esquerdo .resultado,
+.ElementoTotal.Pergunta .Direito .iconeInicio,
+.ElementoTotal.Pergunta .Direito .iconeResultado,
+.ElementoTotal.Pergunta .Direito .calendario.Dia .calendarioMes,
+.ElementoTotal.Pergunta .Direito .calendario.Mes .calendarioDia,
+.ElementoTotal.Resposta .Esquerdo .SecInicio,
+.ElementoTotal.Resposta .Esquerdo .perguntas,
+.ElementoTotal.Resposta .Direito .calendario,
+.ElementoTotal.Resposta .Direito .iconeInicio,
+.ElementoTotal.Resposta .Esquerdo .resultado.certo .re,
+.ElementoTotal.Resposta .Esquerdo .resultado.errado .rc {
+    display: none;
+}
+
+@media only screen and (max-width: 795px) {
+    .ElementoTotal {
+        position: absolute;
+        width: 100%;
+        transform: translate(0,0);
+        top: 0;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .ElementoTotal .Esquerdo {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        display: inline-block;
+    }
+    
+    .ElementoTotal .Direito {
+        width: 100%;
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%);
+        transform: scale(80%);
+    }
+
+    .ElementoTotal .Esquerdo header {
+        margin-bottom: 1ch;
+    }
+
+    .ElementoTotal.Inicio .Esquerdo header h1 {
+        display: none;
+    }
+}

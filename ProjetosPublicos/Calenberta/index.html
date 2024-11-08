@@ -1,0 +1,109 @@
+<!-- Criado por Luan Carvalho em 07.11.2024 às 20:33 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calenberta - Calendário da descoberta</title>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, user-scalable=yes" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');</style>
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+  </head>
+  <body>
+    <div class="ElementoTotal Inicio" id="elementoTotal"><div class="Esquerdo" id="elementoPainelEsquerdo">
+      <header>
+        <h1>Calenberta</h1>
+      </header>
+      <section class="SecInicio">
+        <div class="tituloBemVindo">
+          <span class="preLogo">Bem vindo ao</span>
+          <h2>Calenberta</h2>
+          <span class="posLogo">O calendário da descoberta</span></div>
+        <div class="subsecao">
+          <h3>Descoberta do quê?</h3>
+          <p>Funciona assim: Você responde “sim” ou “não” e consigo<em> descobrir o dia e o mês que você nasceu</em>.</p>
+          <p>Não acredita? Então descobre aí. É de graça!</p>
+          <div class="botaoAcao">
+            <button id="btComecar">Descobrir</button>
+          </div>
+          <p class="textoLegal">Calenberta foi criado por Luan Carvalho em 07 de novembro de 2024. Essa página foi configurada para não guardar os arquivos carregados pelo navegador aqui e devem ser eliminados automaticamente assim que esta seção finalizar. Isso quer dizer que não armazenamos seu dia e mês de nascimento após sair dessa página.</p>
+        </div>
+      </section>
+      <section class="perguntas">
+        <h3 id="status"></h3>
+        <h2 id="pergunta"></h2>
+        <p id="paragrafoPergunta"></p>
+        <div class="botaoAcao">
+          <button id="btRespostaSim">Sim</button><button id="btRespostaNao">Não</button>
+        </div>
+      </section>
+      <section class="resultado" id="resultado">
+        <h3>Você nasceu em</h3>
+        <h2 id="textoResultado"></h2>
+        <p class="rc">Acertei? Eu sei que sim. Não precisa falar!</p>
+        <p class="rc">Mas se errei, vou te dizer os prováveis motivos: Foi porque você não entendeu as perguntas ou porque estava tentando me enganar. Não foi culpa minha, lamento! 😞</p>
+        <p class="re">E o motivo é um destes: Você não entendeu as perguntas ou você estava tentando me enganar. É isso, não é?</p>
+        <p class="re">Se você responder corretamente, vou sempre acertar. É assim que funciona! 👍</p>
+        <p>Seja como for, você pode voltar ao início e começar novamente ou enviar pra mais alguém tentar. Espero que tenha gostado!</p>
+        <div class="botaoAcao">
+          <button id="btFim">Voltar ao início</button>
+        </div>
+      </section>
+      <footer></footer>
+    </div><div class="Direito" id="elementoPainelDireito">
+      <section class="iconeInicio">🗓️</section>
+      <section class="iconeResultado" id="emojiResultado"></section>
+      <section class="calendario" title="Não clique no calendário!" id="elementoCalendario">
+        <div class="calendarioDia" id="elementoCalendarioDia">
+          <span class="cd01">1</span>
+          <span class="cd02">2</span>
+          <span class="cd03">3</span>
+          <span class="cd04">4</span>
+          <span class="cd05">5</span>
+          <span class="cd06">6</span>
+          <span class="cd07">7</span>
+          <span class="cd08">8</span>
+          <span class="cd09">9</span>
+          <span class="cd10">10</span>
+          <span class="cd11">11</span>
+          <span class="cd12">12</span>
+          <span class="cd13">13</span>
+          <span class="cd14">14</span>
+          <span class="cd15">15</span>
+          <span class="cd16">16</span>
+          <span class="cd17">17</span>
+          <span class="cd18">18</span>
+          <span class="cd19">19</span>
+          <span class="cd20">20</span>
+          <span class="cd21">21</span>
+          <span class="cd22">22</span>
+          <span class="cd23">23</span>
+          <span class="cd24">24</span>
+          <span class="cd25">25</span>
+          <span class="cd26">26</span>
+          <span class="cd27">27</span>
+          <span class="cd28">28</span>
+          <span class="cd29">29</span>
+          <span class="cd30">30</span>
+          <span class="cd31">31</span>
+        </div>
+        <div class="calendarioMes" id="elementoCalendarioMes">
+          <span class="cm01">Janeiro</span>
+          <span class="cm02">Fevereiro</span>
+          <span class="cm03">Março</span>
+          <span class="cm04">Abril</span>
+          <span class="cm05">Maio</span>
+          <span class="cm06">Junho</span>
+          <span class="cm07">Julho</span>
+          <span class="cm08">Agosto</span>
+          <span class="cm09">Setembro</span>
+          <span class="cm10">Outubro</span>
+          <span class="cm11">Novembro</span>
+          <span class="cm12">Dezembro</span>
+        </div>
+      </section>
+    </div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
