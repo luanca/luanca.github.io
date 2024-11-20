@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.2546272cm"
+   height="2.9975779cm"
+   viewBox="0 0 42.546272 29.975779"
+   version="1.1"
+   id="svg299"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="LogYouTube.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview301"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.71624579"
+     inkscape:cx="88.656717"
+     inkscape:cy="11.867435"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs296" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-26.380406,-145.64011)"
+     style="fill:#ffffff">
+    <circle
+       style="display:none;fill:#000000;stroke-width:222.692"
+       id="path340"
+       cx="47.716751"
+       cy="160.69122"
+       r="31.10821"
+       inkscape:label="path340" />
+    <path
+       d="m 43.30222,166.95403 v -12.65207 l 11.120048,6.32634 z m 24.735339,-16.6331 c -0.48928,-1.84255 -1.93102,-3.29348 -3.761476,-3.7859 -3.317884,-0.89492 -16.62254,-0.89492 -16.62254,-0.89492 0,0 -13.304582,0 -16.622563,0.89492 -1.830529,0.49242 -3.272277,1.94335 -3.761518,3.7859 -0.889056,3.33946 -0.889056,10.30707 -0.889056,10.30707 0,0 0,6.9675 0.889056,10.30709 0.489241,1.84253 1.930989,3.29344 3.761518,3.78608 3.317981,0.89472 16.622563,0.89472 16.622563,0.89472 0,0 13.304656,0 16.62254,-0.89472 1.830456,-0.49264 3.272196,-1.94355 3.761476,-3.78608 0.889121,-3.33959 0.889121,-10.30709 0.889121,-10.30709 0,0 0,-6.96761 -0.889121,-10.30707"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.024174"
+       id="path12"
+       inkscape:label="path12" />
+  </g>
+</svg>

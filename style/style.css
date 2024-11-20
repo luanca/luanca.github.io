@@ -117,7 +117,6 @@ a:visited {
   background-color: rgb(77 85 99);
   color: #ededed;
   width: 19.3%;
-  padding: 1px;
   border-radius: 4px;
   text-decoration: none;
   margin: 0 0.7% 5px 0;
@@ -126,6 +125,11 @@ a:visited {
   min-height: 1.6cm;
   align-content: center;
   text-align: center;
+  background-origin: content-box;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0.4em 3em;
 }
 
 .d1 .listaLinks a:hover{

@@ -15,22 +15,17 @@
         {
           "Nome": "LinkedIn",
           "Url": "https://www.linkedin.com/in/luancarvalhos",
-          "Icone": "Icones/Slide3.JPG"
+          "Icone": "Icones/LogoLinkedIn.svg"
         },
         {
-          "Icone": "Icones/Slide2.JPG",
+          "Icone": "Icones/LogoFacebook.svg",
           "Nome": "Facebook",
           "Url": "https://www.facebook.com/luan.carvalho.jw"
         },
         {
           "Url": "https://t.me/luancrvlh",
-          "Icone": "Icones/Slide4.JPG",
+          "Icone": "Icones/LogoTelegram.svg",
           "Nome": "Telegram"
-        },
-        {
-          "Nome": "DEV Community",
-          "Url": "https://dev.to/luanca",
-          "Icone": "Icones/Slide5.JPG"
         }
       ]
     },
@@ -39,12 +34,12 @@
       "Links":[
         {
           "Nome": "GitHub",
-          "Icone": "Icones/Slide6.JPG",
+          "Icone": "Icones/LogoGitHub.svg",
           "Url": "https://github.com/luanca"
         },
         {
           "Nome": "PyPI",
-          "Icone": "Icones/Slide7.JPG",
+          "Icone": "Icones/LogoPyPi.svg",
           "Url": "https://pypi.org/user/luanc/"
         }
       ]
@@ -55,70 +50,70 @@
         {
           "Nome": "500px",
           "Url": "https://500px.com/p/luanc",
-          "Icone": "Icones/Slide8.JPG"
+          "Icone": "Icones/Logo500Px.svg"
         },
         {
           "Nome": "Shutterstock",
           "Url": "https://www.shutterstock.com/g/luanc",
-          "Icone": "Icones/Slide9.JPG"
+          "Icone": "Icones/LogoShutterstock.svg"
         },
         {
           "Nome": "Pond5",
           "Url": "https://www.pond5.com/pt/artist/luancjw",
-          "Icone": "Icones/Slide10.JPG"
+          "Icone": "Icones/LogoPond5.svg"
         },
         {
-          "Icone": "Icones/Slide11.JPG",
+          "Icone": "Icones/LogoBigstock.svg",
           "Nome" : "Bigstock",
           "Url" : "https://www.bigstockphoto.com/pt/profile/Luan%20Carvalho/"
         },
         {
-          "Icone": "Icones/Slide12.JPG",
+          "Icone": "Icones/LogoAdobeStock.svg",
           "Nome": "Adobe Stock",
           "Url": "https://stock.adobe.com/br/contributor/208788734/Luan%20Carvalho"
         },
         {
-          "Icone": "Icones/Slide13.JPG",
+          "Icone": "Icones/LogoFlickr.svg",
           "Nome": "Flickr",
           "Url": "http://flickr.com/199851882@N08"
         }
       ]
     },
     {
-      "Categoria": "PROJETO › Mega Karaokê",
+      "Categoria": "PROJETO › Mega Karaokê®",
       "Links":[
         {
           "Nome": "Site oficial",
-          "Icone": "",
+          "Icone": "Icones/LogoMegaKaraoke.svg",
           "Url": "https://megakaraokeoficial.web.app/"
         },
         {
           "Nome": "Youtube",
           "Url": "https://www.youtube.com/@MegaKaraokeOficial",
-          "Icone": "Icones/Slide14.JPG"
+          "Icone": "Icones/LogoMKYouTube.svg"
         },
         {
           "Nome": "Facebook",
-          "Icone": "Icones/Slide15.JPG",
+          "Icone": "Icones/LogoMKFacebook.svg",
           "Url": "https://www.facebook.com/MegaKaraokeOficial"
         },
         {
           "Nome": "Instagram",
-          "Icone": "Icones/Slide16.JPG",
+          "Icone": "Icones/LogoMKInstagram.svg",
           "Url": "https://www.instagram.com/MegaKaraokeOficial/"
         },
         {
           "Nome": "LinkedIn",
-          "Icone": "Icones/Slide17.JPG",
+          "Icone": "Icones/LogoMKLinkedIn.svg",
           "Url": "https://www.linkedin.com/company/megakaraokeoficial"
         }
       ]
     },
     {
-      "Categoria": "MINIPROJETO › Calenberta",
+      "Categoria": "MINIPROJETOS",
       "Links":[
         {
-          "Nome": "Página",
+          "Nome": "Calenberta",
           "Icone": "",
           "Url": "/ProjetosPublicos/Calenberta/index.html"
         }

@@ -50,17 +50,21 @@ function preencher() {
         vp8.setAttribute("id", encodeURIComponent(vp7.Categoria));
         document.getElementById("links").appendChild(vp8);
         vp7.Links.forEach(vp3 => {
+          /*
           vp4 = document.createElement("img");
           vp4.setAttribute("src", vp3.Icone);
           vp4.setAttribute("alt", "Ícone de " + vp3.Nome);
+          */
           vp5 = document.createElement("span");
           vp5.innerText = vp3.Nome;
           vp6 = document.createElement("a");
           vp6.setAttribute("href", vp3.Url);
+          vp6.style.backgroundImage = "url('" + vp3.Icone + "')";
           vp6.setAttribute("target", "_blank");
           vp6.setAttribute("class", "btnLink");
-          if(vp3.Icone !== null){vp6.appendChild(vp4)};
-          vp6.appendChild(vp5);
+          //if(vp3.Icone !== null){vp6.appendChild(vp4)};
+          if(vp3.Icone == null || vp3.Icone == ""){vp6.appendChild(vp5)};
+          //vp6.appendChild(vp5);
           document.getElementById("links").appendChild(vp6);
         });
       });
