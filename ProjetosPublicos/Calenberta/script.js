@@ -2,31 +2,31 @@
 
 const perguntas = {
     "1": {
-        "pergunta": "O dia do mês em que você nasceu aparece neste calendário?",
+        "pergunta": "O dia em que você nasceu aparece neste calendário?",
         "status": "Pergunta 1 de 9",
         "paragrafo": "Há um calendário nesta página. Verifique esse calendário e responda a pergunta usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
     },
     "2": {
-        "pergunta": "Este calendário mostra o dia do mês do seu nascimento?",
+        "pergunta": "Este calendário mostra o dia  do seu nascimento?",
         "status": "Pergunta 2 de 9",
         "paragrafo": "Responda usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
     },
     "3": {
-        "pergunta": "O dia do mês em que você nasceu visível neste calendário?",
+        "pergunta": "O dia em que você nasceu visível neste calendário?",
         "status": "Pergunta 3 de 9",
         "paragrafo": "Responda usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
     },
     "4": {
-        "pergunta": "Consegue ver o dia do mês do seu nascimento neste calendário?",
+        "pergunta": "Consegue ver o dia do seu nascimento neste calendário?",
         "status": "Pergunta 4 de 9",
         "paragrafo": "Responda usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
     },
     "5": {
-        "pergunta": "Neste calendário é possível ver o dia do mês em que você nasceu?",
+        "pergunta": "Neste calendário é possível ver o dia em que você nasceu?",
         "status": "Pergunta 5 de 9",
         "paragrafo": "Última pergunta sobre o dia! Responda-a usando um dos botões abaixo.",
         "calendarioTipo": "Dia"
