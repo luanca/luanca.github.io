@@ -16,16 +16,6 @@
           "Nome": "LinkedIn",
           "Url": "https://www.linkedin.com/in/luancarvalhos",
           "Icone": "Icones/LogoLinkedIn.svg"
-        },
-        {
-          "Icone": "Icones/LogoFacebook.svg",
-          "Nome": "Facebook",
-          "Url": "https://www.facebook.com/luan.carvalho.jw"
-        },
-        {
-          "Url": "https://t.me/luancrvlh",
-          "Icone": "Icones/LogoTelegram.svg",
-          "Nome": "Telegram"
         }
       ]
     },
