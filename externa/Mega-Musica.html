@@ -83,6 +83,7 @@
             vp1.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                 vp2 = JSON.parse(this.responseText);
+                document.title = vp2["artistas"][codArtista]["nome"] + " | Artista Mega Música";
                 vp3 = document.createElement("h1");
                 vp3.innerText = vp2["artistas"][codArtista]["nome"];
                 document.querySelector("div.painel div.titulo").replaceChildren();
