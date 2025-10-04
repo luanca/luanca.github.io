@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista Mega Música</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Symbols+2&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Pacifico&display=swap');</style>
+    <style>
+        body {
+        background-color: #222831;
+        text-align: center;
+        color: #fff;
+        }
+
+        * {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans", "Noto Sans Symbols 2", "Noto Color Emoji", sans-serif;
+        }
+
+        div.backcenter {
+            max-width: 900pt;
+            margin: auto;
+        }
+
+        div.painel {
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 10pt 0;
+            padding: 7pt 5pt;
+            text-align: initial;
+            border-radius: 2pt;
+        }
+
+        div.painel div.titulo {
+            margin-top: 7pt;
+            margin-bottom: 5pt;
+            font-size: 20pt;
+        }
+
+        div.painel div.desc {
+            margin: 0;
+        }
+
+        div.painel div.desc p {
+            margin-bottom: 5pt;
+            font-size: 12.5pt;
+        }
+
+        div.painel div.rodape {
+            margin-top: 8pt;
+            font-size: 10pt;
+            text-align: right;
+        }
+
+        a:link {
+            color: inherit;
+            text-decoration: underline #33f;
+        }
+
+        a:visited {
+            color: inherit;
+            text-decoration: underline #0dd;
+        }
+    </style>
+</head>
+<body>
+    <div class="backcenter">
+        <div class="painel">
+            <div class="titulo"><h1>⠒⠒⠒⠒⠒⠒</h1></div>
+            <div class="desc"></div>
+            <div class="rodape"></div>
+        </div>
+    </div>
+    <script>
+        function exibirArtista() {
+            // função para preencher as informações na página
+            var vp1, vp2, vp4, vp5, vp6, vp8, urlparametros;
+            vp1 = new XMLHttpRequest();
+            urlparametros = new URLSearchParams(document.location.search);
+            codArtista = urlparametros.get("artista");
+            vp1.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                vp2 = JSON.parse(this.responseText);
+                vp3 = document.createElement("h1");
+                vp3.innerText = vp2["artistas"][codArtista]["nome"];
+                document.querySelector("div.painel div.titulo").replaceChildren();
+                document.querySelector("div.painel div.titulo").appendChild(vp3);
+                document.querySelector("div.painel div.desc").replaceChildren();
+                vp2["artistas"][codArtista]["descricao"].forEach(elementoatual => {
+                    vp4 = document.createElement("p");
+                    vp4.innerHTML = elementoatual;
+                    document.querySelector("div.painel div.desc").appendChild(vp4);
+                });
+                vp5 = document.createElement("span");
+                vp5.innerText = vp2["artistas"][codArtista]["infs-finais"];
+                document.querySelector("div.painel div.rodape").replaceChildren();
+                document.querySelector("div.painel div.rodape").appendChild(vp5);
+                }
+            };
+            vp1.open("GET", "artists.json", true);
+            vp1.send();
+        }
+
+        exibirArtista();
+    </script>
+</body>
+</html>
