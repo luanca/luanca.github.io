@@ -15,6 +15,10 @@
         <meta property="og:type" content="website" />
         <link rel="icon" href="ico.ico" type="image/x-icon" />
         <style>
+            @font-face {
+                font-family: "JW-icons";
+                src: url("jw-icons-external-d876da3.ttf");
+            }
             :root {
                 font-size: 15px;
             }
@@ -92,11 +96,12 @@
                 text-decoration: underline;
             }
             div.listaArquivos ul li::before, div.listaArquivos ul li:hover::before {
-                content: "📄";
+                font-family: "JW-icons";
+                content: "";
                 text-decoration-line: none;
                 font-size: 2rem;
                 display: inline-block;
-                margin-right: 0.25rem;
+                margin-right: 0.6rem;
             }
             @media (prefers-color-scheme: dark) {
                 body {
@@ -130,7 +135,7 @@
             </div>
         </div>
         <script>
-            var DocumentosDisponiveis = {"dados":[{"exibicao":"20 a 26 de outubro de 2025","link":"download/Reuniões_S202543_20.out.2025-26.out.2025_251019145403.pdf"},{"exibicao":"27 de outubro a 2 de novembro de 2025","link":"download/Reuniões_S202544_27.out.2025-02.nov.2025_251021160139.pdf"},{"exibicao":"3 a 9 de novembro de 2025","link":"download/Reuniões_S202545_03.nov.2025-09.nov.2025_251021161140.pdf"},{"exibicao":"10 a 16 de novembro de 2025","link":"download/Reuniões_S202546_10.nov.2025-16.nov.2025_251021161826.pdf"},{"exibicao":"17 a 23 de novembro de 2025","link":"download/Reuniões_S202547_17.nov.2025-23.nov.2025_251021162503.pdf"},{"exibicao":"24 a 30 de novembro de 2025","link":"download/Reuniões_S202548_24.nov.2025-30.nov.2025_251021163813.pdf"}],"atualizado":"2025-10-23T11:15:59.16505-03:00"};
+            var DocumentosDisponiveis = {"dados":[{"exibicao":"20 a 26 de outubro de 2025","link":"download/Reuniões_S202543_20.out.2025-26.out.2025_251019145403.pdf"},{"exibicao":"27 de outubro a 2 de novembro de 2025","link":"download/Reuniões_S202544_27.out.2025-02.nov.2025_251021160139.pdf"},{"exibicao":"3 a 9 de novembro de 2025","link":"download/Reuniões_S202545_03.nov.2025-09.nov.2025_251021161140.pdf"},{"exibicao":"10 a 16 de novembro de 2025","link":"download/Reuniões_S202546_10.nov.2025-16.nov.2025_251021161826.pdf"},{"exibicao":"17 a 23 de novembro de 2025","link":"download/Reuniões_S202547_17.nov.2025-23.nov.2025_251021162503.pdf"},{"exibicao":"24 a 30 de novembro de 2025","link":"download/Reuniões_S202548_24.nov.2025-30.nov.2025_251021163813.pdf"}],"atualizado":"2025-10-23T13:14:40.6095595-03:00"};
 
             function ExibirProgramacoes() {
                 // Exibir os documentos disponíveis no JSON
