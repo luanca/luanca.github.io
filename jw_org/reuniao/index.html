@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="theme-color" content="#e1efd8" />
+        <meta name="theme-color" content="#b6ff88" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, user-scalable=yes" />
         <meta charset="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,12 +52,14 @@
             header h1 {
                 font-family: "Noto Sans Display", sans-serif;
                 font-size: 2.3rem;
+                color: #225800;
             }
             header em {
                 font-family: "Noto Sans Display", sans-serif;
                 font-size: 1.5rem;
                 font-style: normal;
                 font-weight: 600;
+                color: #378e00;
             }
             div.corpoPagina {
                 margin: 1.1rem 0;
@@ -95,13 +97,14 @@
             a:hover {
                 text-decoration: underline;
             }
-            div.listaArquivos ul li::before, div.listaArquivos ul li:hover::before {
+            div.listaArquivos ul li::before {
                 font-family: "JW-icons";
                 content: "";
                 text-decoration-line: none;
                 font-size: 2rem;
                 display: inline-block;
                 margin-right: 0.6rem;
+                color: #225800;
             }
             @media (prefers-color-scheme: dark) {
                 body {
@@ -111,6 +114,15 @@
                 }
                 div.listaArquivos ul li:hover {
                     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                }
+                header h1 {
+                    color: #b6ff88;
+                }
+                header em {
+                    color: #ceffb0;
+                }
+                div.listaArquivos ul li::before {
+                    color: #b6ff88;
                 }
             }
         </style>
@@ -135,7 +147,7 @@
             </div>
         </div>
         <script>
-            var DocumentosDisponiveis = {"dados":[{"exibicao":"20 a 26 de outubro de 2025","link":"download/Reuniões_S202543_20.out.2025-26.out.2025_251019145403.pdf"},{"exibicao":"27 de outubro a 2 de novembro de 2025","link":"download/Reuniões_S202544_27.out.2025-02.nov.2025_251021160139.pdf"},{"exibicao":"3 a 9 de novembro de 2025","link":"download/Reuniões_S202545_03.nov.2025-09.nov.2025_251021161140.pdf"},{"exibicao":"10 a 16 de novembro de 2025","link":"download/Reuniões_S202546_10.nov.2025-16.nov.2025_251021161826.pdf"},{"exibicao":"17 a 23 de novembro de 2025","link":"download/Reuniões_S202547_17.nov.2025-23.nov.2025_251021162503.pdf"},{"exibicao":"24 a 30 de novembro de 2025","link":"download/Reuniões_S202548_24.nov.2025-30.nov.2025_251021163813.pdf"}],"atualizado":"2025-10-23T13:14:40.6095595-03:00"};
+            var DocumentosDisponiveis = {"atualizado":"2025-10-23T13:32:36.6768056-03:00","dados":[{"link":"download/Reuniões_S202543_20.out.2025-26.out.2025_251019145403.pdf","exibicao":"20 a 26 de outubro de 2025"},{"link":"download/Reuniões_S202544_27.out.2025-02.nov.2025_251021160139.pdf","exibicao":"27 de outubro a 2 de novembro de 2025"},{"link":"download/Reuniões_S202545_03.nov.2025-09.nov.2025_251021161140.pdf","exibicao":"3 a 9 de novembro de 2025"},{"link":"download/Reuniões_S202546_10.nov.2025-16.nov.2025_251021161826.pdf","exibicao":"10 a 16 de novembro de 2025"},{"link":"download/Reuniões_S202547_17.nov.2025-23.nov.2025_251021162503.pdf","exibicao":"17 a 23 de novembro de 2025"},{"link":"download/Reuniões_S202548_24.nov.2025-30.nov.2025_251021163813.pdf","exibicao":"24 a 30 de novembro de 2025"}]};
 
             function ExibirProgramacoes() {
                 // Exibir os documentos disponíveis no JSON
