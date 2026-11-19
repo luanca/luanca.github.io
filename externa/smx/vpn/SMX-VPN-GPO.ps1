@@ -17,7 +17,7 @@ param(
 )
 
 # ====== AJUSTE AQUI ======
-$Domain   = 'SEU-DOMINIO-AQUI'   # domínio interno a ser testado
+$Domain   = 'SMX.LOGISTICS'   # domínio interno a ser testado
 $VpnName  = 'SMX VPN'
 $OvpnUrl  = 'https://luanca.github.io/externa/smx/vpn/sslvpn-luan.santos%40smx.logistics-client-config.ovpn'
 $CredUrl  = 'https://luanca.github.io/externa/smx/vpn/credenciais.enc'
