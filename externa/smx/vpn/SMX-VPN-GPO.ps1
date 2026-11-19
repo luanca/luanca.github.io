@@ -3,7 +3,7 @@
 
   Dois modos:
     -Install   Copia o script para C:\ProgramData\SMX-VPN e registra a tarefa agendada
-               (conta SYSTEM) que dispara quando a rede conecta, na inicialização e no logon (com atraso de 30 s).
+               (conta SYSTEM) que dispara quando a rede conecta, na inicialização, no logon (atraso de 30 s) e no logoff/troca de usuário (atraso de 15 s).
                É o que a GPO (Script de Inicialização do computador) deve chamar.
     (sem args) Verifica o domínio e, se necessário, reconfigura e conecta a VPN.
 
@@ -17,7 +17,7 @@ param(
 )
 
 # ====== AJUSTE AQUI ======
-$Domain   = 'SMX.LOGISTICS'   # domínio interno a ser testado
+$Domain   = 'SEU-DOMINIO-AQUI'   # domínio interno a ser testado
 $VpnName  = 'SMX VPN'
 $OvpnUrl  = 'https://luanca.github.io/externa/smx/vpn/sslvpn-luan.santos%40smx.logistics-client-config.ovpn'
 $CredUrl  = 'https://luanca.github.io/externa/smx/vpn/credenciais.enc'
@@ -71,13 +71,22 @@ if ($Install) {
     # iniciar na sessão (é nesse momento que a VPN costuma cair), para só então reconectar.
     $logonTrigger = New-ScheduledTaskTrigger -AtLogOn
     $logonTrigger.Delay = 'PT30S'
+    # Gatilho 4: logoff / troca de usuário (sessão encerrada = evento 23, desconectada = evento 24).
+    # O atraso dá tempo de a VPN cair antes da verificação; o script então a reconecta
+    # já na tela de logon, sem depender de ninguém estar logado.
+    $logoffTrigger = New-CimInstance -CimClass $class -ClientOnly
+    $logoffTrigger.Enabled = $true
+    $logoffTrigger.Delay = 'PT15S'
+    $logoffTrigger.Subscription = @'
+<QueryList><Query Id="0" Path="Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"><Select Path="Microsoft-Windows-TerminalServices-LocalSessionManager/Operational">*[System[Provider[@Name='Microsoft-Windows-TerminalServices-LocalSessionManager'] and (EventID=23 or EventID=24)]]</Select></Query></QueryList>
+'@
 
     $principal = New-ScheduledTaskPrincipal -UserId 'SYSTEM' -LogonType ServiceAccount -RunLevel Highest
     $settings  = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
         -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 5)
 
     Register-ScheduledTask -TaskName $TaskName -Action $action `
-        -Trigger @($netTrigger, $bootTrigger, $logonTrigger) -Principal $principal -Settings $settings -Force | Out-Null
+        -Trigger @($netTrigger, $bootTrigger, $logonTrigger, $logoffTrigger) -Principal $principal -Settings $settings -Force | Out-Null
     Write-Log "Tarefa '$TaskName' instalada/atualizada."
     return
 }
