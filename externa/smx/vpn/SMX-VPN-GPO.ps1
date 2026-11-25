@@ -110,6 +110,25 @@ function Wait-Domain([string]$Name, [int]$TimeoutSec) {
     return $false
 }
 
+function Show-WindowsNotification([string]$Title, [string]$Message) {
+    try {
+        Add-Type -AssemblyName System.Windows.Forms
+        Add-Type -AssemblyName System.Drawing
+
+        $notifyIcon = New-Object System.Windows.Forms.NotifyIcon
+        $notifyIcon.Icon = [System.Drawing.SystemIcons]::Information
+        $notifyIcon.BalloonTipTitle = $Title
+        $notifyIcon.BalloonTipText = $Message
+        $notifyIcon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Info
+        $notifyIcon.Visible = $true
+        $notifyIcon.ShowBalloonTip(10000)
+        Start-Sleep -Milliseconds 500
+        $notifyIcon.Dispose()
+    } catch {
+        Write-Log "AVISO: não foi possível exibir a notificação do Windows: $($_.Exception.Message)"
+    }
+}
+
 # 1) Domínio já disponível?
 Write-Log "Rede conectada. Testando $Domain..."
 if (Wait-Domain $Domain 15) {
@@ -186,6 +205,7 @@ finally {
 # 4) Verifica se deu certo
 if (Wait-Domain $Domain 60) {
     Write-Log "SUCESSO: $Domain respondeu após conectar a VPN."
+    Show-WindowsNotification 'SMX VPN' "Conectado ao domínio $Domain"
 } else {
     Write-Log "FALHA: $Domain continua sem resposta após a VPN."
     exit 1
