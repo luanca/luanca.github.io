@@ -11,9 +11,16 @@
   Encrypt-VpnCredential.ps1). A chave (vpn.key) fica na pasta da GPO, ao lado deste script;
   o -Install a copia para C:\ProgramData\SMX-VPN com ACL restrita a SYSTEM/Administradores.
   A senha é descriptografada só em memória (nunca gravada em disco nem no log).
+
+  Parâmetros opcionais do -Install (úteis se a chave não estiver ao lado do script na GPO):
+    -KeyPath   '\\servidor\compartilhamento\vpn.key'   caminho explícito da chave
+    -SourceDir '\\servidor\compartilhamento'           pasta onde procurar o vpn.key
+  O -Install registra em C:\ProgramData\SMX-VPN\smx-vpn.log onde procurou cada arquivo.
 #>
 param(
-    [switch]$Install
+    [switch]$Install,
+    [string]$KeyPath,      # caminho explícito do vpn.key (ex.: \\servidor\compartilhamento\vpn.key)
+    [string]$SourceDir     # pasta de origem explícita (script + vpn.key), se não for a pasta do próprio script
 )
 
 # ====== AJUSTE AQUI ======
@@ -43,16 +50,57 @@ function Write-Log([string]$Message) {
 # ---------------------------------------------------------------
 if ($Install) {
     $target = Join-Path $InstallDir 'SMX-VPN-GPO.ps1'
-    if ($PSCommandPath -ne $target) { Copy-Item $PSCommandPath $target -Force }
 
-    # Copia a chave (que está ao lado deste script na pasta da GPO) e restringe o acesso
-    $srcKey = Join-Path (Split-Path -Parent $PSCommandPath) 'vpn.key'
-    if (Test-Path $srcKey) {
-        if ($srcKey -ne $KeyFile) { Copy-Item $srcKey $KeyFile -Force }
-        & icacls.exe $KeyFile /inheritance:r /grant:r '*S-1-5-18:(F)' '*S-1-5-32-544:(F)' | Out-Null
-        Write-Log "Chave instalada em $KeyFile."
-    } elseif (-not (Test-Path $KeyFile)) {
-        Write-Log "AVISO: vpn.key não encontrada ao lado do script nem em $InstallDir."
+    # Descobre onde o script está rodando (a GPO pode chamá-lo de um caminho UNC no SYSVOL)
+    $selfPath = $PSCommandPath
+    if (-not $selfPath) { $selfPath = $MyInvocation.MyCommand.Path }
+    $selfDir  = if ($selfPath) { Split-Path -Parent $selfPath } else { $null }
+    Write-Log ("INSTALL: usuário={0}; script='{1}'; pasta='{2}'; SourceDir='{3}'; KeyPath='{4}'" -f `
+        [Environment]::UserName, $selfPath, $selfDir, $SourceDir, $KeyPath)
+
+    # Copia o próprio script para o armazenamento local
+    try {
+        if (-not $selfPath) { throw 'Caminho do script indisponível ($PSCommandPath e $MyInvocation vazios).' }
+        if ($selfPath -ne $target) {
+            Copy-Item -LiteralPath $selfPath -Destination $target -Force
+            Write-Log "Script copiado para $target."
+        }
+    } catch {
+        Write-Log "ERRO ao copiar o script: $($_.Exception.Message)"
+    }
+
+    # Procura a chave, em ordem: -KeyPath, pasta do script, -SourceDir
+    $candidates = @()
+    if ($KeyPath)   { $candidates += $KeyPath }
+    if ($selfDir)   { $candidates += (Join-Path $selfDir 'vpn.key') }
+    if ($SourceDir) { $candidates += (Join-Path $SourceDir 'vpn.key') }
+
+    $srcKey = $null
+    foreach ($c in $candidates) {
+        $found = $false
+        try { $found = Test-Path -LiteralPath $c } catch { }
+        Write-Log ("INSTALL: chave em '{0}' -> {1}" -f $c, $(if ($found) { 'encontrada' } else { 'NÃO encontrada' }))
+        if ($found) { $srcKey = $c; break }
+    }
+
+    # Copia a chave e restringe o acesso
+    if ($srcKey) {
+        try {
+            if ($srcKey -ne $KeyFile) { Copy-Item -LiteralPath $srcKey -Destination $KeyFile -Force }
+            & icacls.exe $KeyFile /inheritance:r /grant:r '*S-1-5-18:(F)' '*S-1-5-32-544:(F)' | Out-Null
+            Write-Log "Chave instalada em $KeyFile."
+        } catch {
+            Write-Log "ERRO ao copiar a chave de '$srcKey': $($_.Exception.Message)"
+        }
+    } elseif (Test-Path $KeyFile) {
+        Write-Log "Chave de origem não encontrada; mantida a chave local já existente em $KeyFile."
+    } else {
+        Write-Log "AVISO: vpn.key não encontrada em nenhum local testado e não existe em $InstallDir."
+    }
+
+    if (-not (Test-Path -LiteralPath $target)) {
+        Write-Log "ERRO: $target não existe; tarefa NÃO registrada."
+        exit 1
     }
 
     $action = New-ScheduledTaskAction -Execute 'powershell.exe' `
